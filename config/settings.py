@@ -85,6 +85,9 @@ keep_screen_awake = True            # True or False, Note: True or False are cas
 # Run in undetected mode to bypass anti-bot protections (Preview Feature, UNSTABLE. Recommended to leave it as False)
 stealth_mode = True                # True or False, Note: True or False are case-sensitive
 
+# Specify the path to the Chrome executable. Leave Empty ( "" ) to use default.
+browser_executable_path = "/Users/apple/Desktop/Google Chrome.app/Contents/MacOS/Google Chrome"        # Eg: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
 # Do you want to get alerts on errors related to AI API connection?
 showAiErrorAlerts = False            # True or False, Note: True or False are case-sensitive
 

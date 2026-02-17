@@ -24,27 +24,27 @@ version:    26.01.20.5.08
 default_resume_path = "all resumes/default/resume.pdf"      # (In Development)
 
 # What do you want to answer for questions that ask about years of experience you have, this is different from current_experience? 
-years_of_experience = "5"          # A number in quotes Eg: "0","1","2","3","4", etc.
+years_of_experience = "1"          # A number in quotes Eg: "0","1","2","3","4", etc.
 
 # Do you need visa sponsorship now or in future?
 require_visa = "No"               # "Yes" or "No"
 
 # What is the link to your portfolio website, leave it empty as "", if you want to leave this question unanswered
-website = "https://github.com/GodsScion"                        # "www.example.bio" or "" and so on....
+website = "https://abhinavaditya.com"                        # "www.example.bio" or "" and so on....
 
 # Please provide the link to your LinkedIn profile.
-linkedIn = "https://www.linkedin.com/in/saivigneshgolla/"       # "https://www.linkedin.com/in/example" or "" and so on...
+linkedIn = "https://www.linkedin.com/in/abhinav-aditya/"       # "https://www.linkedin.com/in/example" or "" and so on...
 
 # What is the status of your citizenship? # If left empty as "", tool will not answer the question. However, note that some companies make it compulsory to be answered
 # Valid options are: "U.S. Citizen/Permanent Resident", "Non-citizen allowed to work for any employer", "Non-citizen allowed to work for current employer", "Non-citizen seeking work authorization", "Canadian Citizen/Permanent Resident" or "Other"
-us_citizenship = "U.S. Citizen/Permanent Resident"
+us_citizenship = "Non-citizen seeking work authorization"
 
 
 
 ## SOME ANNOYING QUESTIONS BY COMPANIES 🫠 ##
 
 # What to enter in your desired salary question (American and European), What is your expected CTC (South Asian and others)?, only enter in numbers as some companies only allow numbers,
-desired_salary = 1200000          # 80000, 90000, 100000 or 120000 and so on... Do NOT use quotes
+desired_salary = 2000000          # 80000, 90000, 100000 or 120000 and so on... Do NOT use quotes
 '''
 Note: If question has the word "lakhs" in it (Example: What is your expected CTC in lakhs), 
 then it will add '.' before last 5 digits and answer. Examples: 
@@ -56,7 +56,7 @@ And if asked in months, then it will divide by 12 and answer. Examples:
 '''
 
 # What is your current CTC? Some companies make it compulsory to be answered in numbers...
-current_ctc = 800000            # 800000, 900000, 1000000 or 1200000 and so on... Do NOT use quotes
+current_ctc = 1300000            # 800000, 900000, 1000000 or 1200000 and so on... Do NOT use quotes
 '''
 Note: If question has the word "lakhs" in it (Example: What is your current CTC in lakhs), 
 then it will add '.' before last 5 digits and answer. Examples: 
@@ -84,12 +84,23 @@ then it will divide by 30 or 7 and answer respectively. Examples:
 '''
 
 # Your LinkedIn headline in quotes Eg: "Software Engineer @ Google, Masters in Computer Science", "Recent Grad Student @ MIT, Computer Science"
-linkedin_headline = "Full Stack Developer with Masters in Computer Science and 4+ years of experience" # "Headline" or "" to leave this question unanswered
+linkedin_headline = "Software Developer @HireQuotient | Generative AI + MERN | B.Tech CSE @LPU '25" # "Headline" or "" to leave this question unanswered
 
 # Your summary in quotes, use \n to add line breaks if using single quotes "Summary".You can skip \n if using triple quotes """Summary"""
 linkedin_summary = """
-I'm a Senior Software Engineer at Amazon with Masters in CS and 4+ years of experience in developing and maintaining Full Stack Web applications and cloud solutions. 
-Specialized in React, Node.js, and Python.
+Hi, I'm Abhinav Aditya! 👋
+
+I'm a software developer passionate about building impactful and user-friendly web applications. With experience in both frontend and backend development, I love turning ideas into reality and solving complex problems through code.
+
+What I Do:
+I specialize in creating intuitive interfaces using tools like React.js, Next.js, and Tailwind CSS, while also building robust backend systems with Node.js, Express.js, and MongoDB. My work often involves integrating APIs, optimizing performance, and ensuring seamless user experiences.
+
+Why I Love This Field:
+For me, coding is more than just a skill - it's a way to create, innovate, and make a difference. Whether it's designing a dynamic feature, improving system efficiency, or learning something new, I thrive on the challenges and creativity this field offers.
+
+Let's Connect!
+If you're passionate about technology, teamwork, or just love talking about all things web development, I'd love to hear from you. Let's collaborate and build something amazing together!Hi, I'm Abhinav Aditya! 👋 I'm a software developer passionate about building impactful and user-friendly web applications. With experience in both frontend and backend development, I love turning ideas into reality and solving complex problems through code. What I Do: I specialize in creating intuitive interfaces using tools like React.js, Next.js, and Tailwind CSS, while also building robust backend systems with Node.js, Express.js, and MongoDB. My work often involves integrating APIs, optimizing performance, and ensuring seamless user experiences. Why I Love This Field: For me, coding is more than just a skill – it's a way to create, innovate, and make a difference. Whether it's designing a dynamic feature, improving system efficiency, or learning something new, I thrive on the challenges and creativity this field offers. Let's Connect! If you're passionate about technology, teamwork, or just love talking about all things web development, I'd love to hear from you. Let's collaborate and build something amazing together!
+
 """
 
 '''
@@ -98,14 +109,30 @@ Note: If left empty as "", the tool will not answer the question. However, note 
 
 # Your cover letter in quotes, use \n to add line breaks if using single quotes "Cover Letter".You can skip \n if using triple quotes """Cover Letter""" (This question makes sense though)
 cover_letter = """
-Cover Letter
+Dear Hiring Manager,
+
+I am writing to express my interest in the Software Developer position. With a strong background in both frontend and backend development specializing in React.js, Next.js, and Node.js. I have a proven track record of building impactful and user friendly web applications.
+
+I am passionate about solving complex problems and optimizing system performance to ensure seamless user experiences. I look forward to the opportunity to contribute my skills to your team and build innovative solutions together.
+
+Best regards,
+Abhinav Aditya
+
 """
 ##> ------ Dheeraj Deshwal : dheeraj9811 Email:dheeraj20194@iiitd.ac.in/dheerajdeshwal9811@gmail.com - Feature ------
 
 # Your user_information_all letter in quotes, use \n to add line breaks if using single quotes "user_information_all".You can skip \n if using triple quotes """user_information_all""" (This question makes sense though)
 # We use this to pass to AI to generate answer from information , Assuing Information contians eg: resume  all the information like name, experience, skills, Country, any illness etc. 
 user_information_all ="""
-User Information
+Name: Abhinav Aditya
+Role: Software Developer
+Skills: React.js, Next.js, Node.js, JavaScript, TypeScript, HTML5, CSS3, Frontend Development, Backend Development, System Optimization.
+Experience: Proven track record in building impactful and user-friendly web applications. Experienced in designing dynamic features and improving system efficiency.
+Education: [Insert University Name, e.g., IIIT Delhi]
+Location: [Insert Location]
+Interests: Web development, technology innovation, teamwork, and solving complex problems.
+Summary: A passionate developer dedicated to creating seamless user experiences and building innovative software solutions.
+
 """
 ##<
 '''
@@ -113,10 +140,10 @@ Note: If left empty as "", the tool will not answer the question. However, note 
 ''' 
 
 # Name of your most recent employer
-recent_employer = "Not Applicable" # "", "Lala Company", "Google", "Snowflake", "Databricks"
+recent_employer = "HireQuotient" # "", "Lala Company", "Google", "Snowflake", "Databricks"
 
 # Example question: "On a scale of 1-10 how much experience do you have building web or mobile applications? 1 being very little or only in school, 10 being that you have built and launched applications to real users"
-confidence_level = "8"             # Any number between "1" to "10" including 1 and 10, put it in quotes ""
+confidence_level = "9"             # Any number between "1" to "10" including 1 and 10, put it in quotes ""
 ##
 
 

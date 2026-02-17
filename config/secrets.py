@@ -14,13 +14,15 @@ Support me: https://github.com/sponsors/GodsScion
 version:    24.12.3.10.30
 '''
 
+from apikeys import openai_api_key, li_password
+
 
 ###################################################### CONFIGURE YOUR TOOLS HERE ######################################################
 
 
 # Login Credentials for LinkedIn (Optional)
-username = "username@example.com"       # Enter your username in the quotes
-password = "example_password"           # Enter your password in the quotes
+username = "abhinavaditya162@gmail.com"       # Enter your username in the quotes
+password = li_password                        # Enter your password in the quotes
 
 
 ## Artificial Intelligence (Beta Not-Recommended)
@@ -58,7 +60,7 @@ Note: Don't forget to add / at the end of your url. You may not need this if you
 '''
 
 # Your LLM API key or other AI API key 
-llm_api_key = "not-needed"              # Enter your API key in the quotes, make sure it's valid, if not will result in error.
+llm_api_key = openai_api_key
 '''
 Note: Leave it empty as "" or "not-needed" if not needed. Else will result in error!
 If you are using ollama, you MUST put "not-needed".

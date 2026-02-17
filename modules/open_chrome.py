@@ -15,7 +15,7 @@ version:    26.01.20.5.08
 '''
 
 from modules.helpers import get_default_temp_profile, make_directories
-from config.settings import run_in_background, stealth_mode, disable_extensions, safe_mode, file_name, failed_file_name, logs_folder_path, generated_resume_path
+from config.settings import run_in_background, stealth_mode, disable_extensions, safe_mode, file_name, failed_file_name, logs_folder_path, generated_resume_path, browser_executable_path
 from config.questions import default_resume_path
 if stealth_mode:
     import undetected_chromedriver as uc
@@ -45,13 +45,15 @@ def createChromeSession(isRetry: bool = False):
         print_lg("Logging in with a guest profile, Web history will not be saved!")
         options.add_argument(f"--user-data-dir={get_default_temp_profile()}")
     if stealth_mode:
-        # try: 
-        #     driver = uc.Chrome(driver_executable_path="C:\\Program Files\\Google\\Chrome\\chromedriver-win64\\chromedriver.exe", options=options)
-        # except (FileNotFoundError, PermissionError) as e: 
-        #     print_lg("(Undetected Mode) Got '{}' when using pre-installed ChromeDriver.".format(type(e).__name__)) 
-            print_lg("Downloading Chrome Driver... This may take some time. Undetected mode requires download every run!")
+        print_lg("Downloading Chrome Driver... This may take some time. Undetected mode requires download every run!")
+        if browser_executable_path:
+            driver = uc.Chrome(options=options, browser_executable_path=browser_executable_path)
+        else:
             driver = uc.Chrome(options=options)
-    else: driver = webdriver.Chrome(options=options) #, service=Service(executable_path="C:\\Program Files\\Google\\Chrome\\chromedriver-win64\\chromedriver.exe"))
+    else:
+        if browser_executable_path:
+            options.binary_location = browser_executable_path
+        driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     wait = WebDriverWait(driver, 5)
     actions = ActionChains(driver)
